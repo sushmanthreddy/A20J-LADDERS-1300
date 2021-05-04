@@ -20,6 +20,6 @@ int main(){
             ++i;
         }
     }
-    cout<<s2<<endl;
+    cout<<s2;
     return 0;
 }
