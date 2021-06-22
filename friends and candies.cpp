@@ -1,33 +1,39 @@
-//sushmanth reddy
-// june 23 4:30
+/*author :
+sushmanth
+june 23  3:40
+*/
 #include<bits/stdc++.h>
-
+ 
 using namespace std;
-
-int main(){
-    int t;
-    cin>>t;
-    for(int i=0;i<t;i++){
-        int m;
-        cin>>m;
-        int a[m];
-        int r=0;
-        for(int j=0;j<m;j++){
-             cin>>a[j];
-             r+=a[j];
-        }
-        if(r%m!=0){
-            cout<<"-1"<<endl;
-            return 0;
-        }
-        r/=m;
-        int s=0;
-        for(int j=0;j<m;j++){
-            if(r<a[j]){
-                s++;
-            }
-        }
-        cout<<s<<endl;
+ 
+void solve() {
+  int n;
+  cin >> n;
+  int a[n];
+  int s = 0;
+  for (int i = 0; i < n; i++) {
+    cin >> a[i];
+    s += a[i];
+  }
+  if (s % n != 0) {
+    cout << "-1" << endl;
+    return;
+  }
+  s /= n;
+  int res = 0;
+  for (int i = 0; i < n; i++) {
+    if (s < a[i]) {
+      res++;
     }
-    return 0;
+  }
+  cout << res << endl;
+}
+ 
+int main() {
+  int t;
+  cin >> t;
+  while (t--) {
+    solve();
+  }
+  return 0;
 }
