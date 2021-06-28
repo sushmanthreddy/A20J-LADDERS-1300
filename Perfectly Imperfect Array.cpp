@@ -21,7 +21,7 @@ void solve()
 		if (f * f != k)
 		{
 			cout << "YES" << endl;
-			return;
+			return 0;
 		}
 	}
 	cout << "NO" << endl;
