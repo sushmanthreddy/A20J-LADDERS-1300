@@ -10,7 +10,7 @@ int main(){
         int m;
         cin>>m;
         int a[m];
-        for(int j=0;j<m;j++){
+        for(auto j=0;j<m;j++){
             cin>>a[j];
         sum+=a[j];
         }
