@@ -13,28 +13,14 @@ Write everything down, analyze the G-spot and attack throught it.
 using namespace std;
 
 int main(){
-    int t;
-    cin>>t;
-    for(int i=0;i<t;i++){
-        int l;
-        cin>>l;
-        char a[l];
-        for(int j=1;j<=l;j++){
-            cin>>a[j];
-        }
-        for(int j=1;j<=l;j++){
-            if(a[j]=='?')
-            if( && j%2==0){
-                a[j]='R';
-            }
-            else if( && j%2!=0){
-                 a[j]='B';
-            }
-        }
-        for(int j=1;j<=l;j++){
-            cout<<a[j];
-        }
-        cout<<endl;
-    }
+   int t;
+   cin>>t;
+   for ( int i = 0; i < t; i++)
+   {
+      int a;
+      cin>>a;
+      cout<<2<<" "<<a-1<<endl;
+   }
+   
     
 }
