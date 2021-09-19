@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "HELLE.C": "cpp"
+        "HELLE.C": "cpp",
+        "number game.C": "cpp"
     }
 }
